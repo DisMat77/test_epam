@@ -107,7 +107,7 @@
     border-radius: 3px;
     min-height: 100px;
     padding: 20px;
-    color: white;
+    color: #ffffff;
     margin-bottom: 20px;
     list-style: none;
     overflow: hidden;
@@ -129,7 +129,7 @@
 }
 
 .content__item--bcgWhite {
-    background-color: #ffffff;
+    background-color: #b1b1b1;
 }
 
 .content__img {
@@ -170,7 +170,6 @@
 .content__span--inline {
     display: inline-block;
 }
-
 
 .content__userInfo {
     text-align: center;
