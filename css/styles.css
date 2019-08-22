@@ -21,6 +21,17 @@
     z-index: 999;
 }
 
+.btn-sorted {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
 .header {
     min-height: 70px;
     background-color: #1b1b1b;
@@ -48,10 +59,10 @@
     position: fixed;
     top: 150px;
     left: 50%;
-    height:400px;
+    height:330px;
     transform: translateX(-50%);
-    width: 50%;
-    background-color: #360501;
+    width: 40%;
+    background-color: #fcae3f;
     z-index: 1000;
 }
 
@@ -65,9 +76,29 @@
     background-color: #1b1b1b;
 }
 
+.content__popup-closeIcon {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.content__popup-closeIcon--45deg {
+    transform: rotate(-45deg);
+    top: 13px;
+    left: 2px;
+}
+
+.content__popup-closeIcon--225deg{
+    transform: rotate(225deg);
+    top: 8px;
+    left: 2px;
+}
+
 .content__list {
     list-style: none;
-    width: 50%;
+    width: 25%;
     margin: 0 auto;
 }
 
@@ -79,6 +110,12 @@
     color: white;
     margin-bottom: 20px;
     list-style: none;
+    overflow: hidden;
+}
+
+.content__item--widthLow {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .content__item:last-child {
@@ -88,24 +125,55 @@
 .content__item:hover {
     cursor: pointer;
     border-radius: 20px;
-    transition: all 0.1s ease;
+    transition: all 0.25s ease-in;
+}
+
+.content__item--bcgWhite {
+    background-color: #ffffff;
 }
 
 .content__img {
     border-radius: 50%;
-    float: left;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .content__name {
-    float: left;
-    padding: 20px 0 0 15px;
     box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 15px;
 }
 
 .content__title {
     margin-left: 15px;
     box-sizing: border-box;
     text-transform: uppercase;
+}
+
+.content__span {
+    margin-left: 20px;
+    display: block;
+    color: #1b1b1b;
+}
+
+.content__span:first-child {
+    margin-left: 0;
+}
+
+.content__span--nonMargin {
+    margin-left: 0;
+    display: block;
+}
+
+.content__span--inline {
+    display: inline-block;
+}
+
+
+.content__userInfo {
+    text-align: center;
 }
 
 .footer {
